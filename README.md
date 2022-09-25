@@ -18,7 +18,6 @@ sudo ./install.sh
 * Install ESP32 packages from Arduino IDE -> Tools -> Board -> Board Manager -> ESP32
 * Install the the latest version of ESP32 libraries
 * Install ROS Library for Arduino IDE
-
 ```
 cd <sketchbook>/libraries/		# as shown under preferences
 cd /libraries
@@ -26,7 +25,6 @@ rm -rf ros_lib
 source ~/catkin_ws/devel/setup.bash
 rosrun rosserial_arduino make_libraries.py .
 ```
-
 ## Install ROS Serial libraries for Arduino
 ```
 sudo apt-get install ros-noetic-rosserial-arduino
