@@ -1,6 +1,14 @@
 # Wolf-Bot
 Set of scripts and instructions to setup and use Wolf Robot from VEEROBOT
+# Joystick Mode
+* Press PS key to turn on remote
+* Wait for the indicator LED's to stop blinking. Once a single LED is on, it means robot binding to joystick is done
+* Use select key to change mode from Normal, Mecanum, Autonomous mode. The last LED indicates settings mode.
+* Settings mode is only required for first connection. See Wolf user manual to understand settings. 
+* Max speed is limited to 1 meters / second. Use the left buttons to control maximum speed of the robot
+* Joystick control and ROS control is mutually exclusive. ROS Commands has priority over Joystick commands. 
 
+# ROS Mode
 ## Install Ubuntu 
 * Install Ubuntu from [Ubuntu Website](https://ubuntu.com/#download). Depending on the platform, you may select the version
 * For Wolf, select Ubuntu 20.04.x LTS (Focal Fossa) version
