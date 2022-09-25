@@ -21,7 +21,7 @@ Set of scripts and instructions to setup and use Wolf Robot from VEEROBOT
 sudo chmod +x install.sh
 sudo ./install.sh
 ```
-### Install ESP32 for Arduino. Wolf uses ESP32 as the base controller. In Preferences, add:
+## Install ESP32 for Arduino. Wolf uses ESP32 as the base controller. In Preferences, add:
 ```https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json```
 * Install ESP32 packages from Arduino IDE -> Tools -> Board -> Board Manager -> ESP32
 * Install the the latest version of ESP32 libraries
