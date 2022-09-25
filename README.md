@@ -73,3 +73,9 @@ rostopic pub /cmd_vel geometry_msgs/Twist "{ linear: {x: 0.5} }" -r 3
 rostopic pub /cmd_vel geometry_msgs/Twist "{ angular: {z: 0.5} }" -r 5
 ```
 * Send cmd_vel to Wolf using a graphical interface : ```rosrun rqt_robot_steering rqt_robot_steering```
+
+## Toggle Commands from ROS Command Prompt
+* Pin 5 is connected to a buzzer and below command can be used to toggle the status of buzzer pin
+```
+rostopic pub toggle_buzzer std_msgs/Empty
+```
