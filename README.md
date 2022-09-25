@@ -2,22 +2,22 @@
 Set of scripts and instructions to setup and use Wolf Robot from VEEROBOT
 
 ## Install Ubuntu 
-Install Ubuntu from [Ubuntu Website](https://ubuntu.com/#download). Depending on the platform, you may select the version
-For Wolf, select Ubuntu 20.04.x LTS (Focal Fossa) version
-Follow the instructions on the page [https://github.com/VEEROBOT/ROS-tools](https://github.com/VEEROBOT/ROS-tools) to install ROS Noetic on Ubuntu Platform. Once installed, test basic scripts mentioned there to test if ROS is installed and working correctly. 
+Install Ubuntu from [Ubuntu Website](https://ubuntu.com/#download). Depending on the platform, you may select the version<br />
+For Wolf, select Ubuntu 20.04.x LTS (Focal Fossa) version<br />
+Follow the instructions on the page [https://github.com/VEEROBOT/ROS-tools](https://github.com/VEEROBOT/ROS-tools) to install ROS Noetic on Ubuntu Platform. <br />Once installed, test basic scripts mentioned there to test if ROS is installed and working correctly. 
 
 ## Optional / Not Required - Install Arduino sofware on Ubuntu Focal for ROS.
-Download and Install Arduino from this [link](https://www.arduino.cc/en/software)
-Extract and go to directory
+Download and Install Arduino from this [link](https://www.arduino.cc/en/software)<br />
+Extract and go to directory<br />
 ```
 sudo chmod +x install.sh
 sudo ./install.sh
 ```
 ### Install ESP32 for Arduino. Wolf uses ESP32 as the base controller. In Preferences, add:
-```https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json```
-Install ESP32 packages from Arduino IDE -> Tools -> Board -> Board Manager -> ESP32
-Install the the latest version of ESP32 libraries
-Install ROS Library for Arduino IDE
+```https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json```<br />
+Install ESP32 packages from Arduino IDE -> Tools -> Board -> Board Manager -> ESP32<br />
+Install the the latest version of ESP32 libraries<br />
+Install ROS Library for Arduino IDE<br />
 ```
 cd <sketchbook>/libraries/		# as shown under preferences
 cd /libraries
