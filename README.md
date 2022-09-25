@@ -53,13 +53,13 @@ catkin_make install
   -r is the number of commands sent to Wolf. -r10 is send the below command at 10Hz. Only use Linear x and Angular z for normal drive. For mecanum, use Linear x, Linear y and Angular z. 
 ```
 rostopic pub /cmd_vel geometry_msgs/Twist "linear:
-							  x: 0.25												
-							  y: 0.0
-							  z: 0.0
-							angular:
-							  x: 0.0
-							  y: 0.0
-							  z: 0.25" - r10	
+	x: 0.25												
+	y: 0.0
+	z: 0.0
+angular:
+	x: 0.0
+	y: 0.0
+	z: 0.25" - r10	
 ```
 * Single Velocity Command:
 ```
