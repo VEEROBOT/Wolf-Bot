@@ -47,6 +47,7 @@ catkin_make install
 * Find any specific file on Ubuntu ```sudo find . -name <filename>```
 
 ## Running Wolf Commands from ROS Command Prompt by sending command velocity (cmd_vel)
+* cmd_vel is limited to -0.5 to +0.5. This means the max velocity of robot is 0.5 meters / second. 
 * To open teleop twist keyboard (if installed): ```rosrun teleop_twist_keyboard teleop_twist_keyboard.py```
 * Too see any error messages or information from Wolf ```rqt_console```
 * Latching Command to run Wolf. Copy Paste does not work. Type till "linear, press tab. Now use left and right arrow keys to edit parameters. -r is the number of commands sent to Wolf. -r10 is send the below command at 10Hz. Only use Linear x and Angular z for normal drive. For mecanum, use Linear x, Linear y and Angular z. 
@@ -66,4 +67,3 @@ rostopic pub /cmd_vel geometry_msgs/Twist "{ linear: {x: 0.5} }" -r 3
 rostopic pub /cmd_vel geometry_msgs/Twist "{ angular: {z: 0.5} }" -r 5
 ```
 * Send cmd_vel to Wolf using a graphical interface : ```rosrun rqt_robot_steering rqt_robot_steering```
-
