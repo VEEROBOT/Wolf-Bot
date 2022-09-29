@@ -53,6 +53,8 @@ catkin_make install
 * Find any specific file on Ubuntu ```sudo find . -name <filename>```
 
 ## Running Wolf Commands from ROS Command Prompt by sending command velocity (cmd_vel)
+* Start ROS Master by typing ```roscore```
+* Type ```rosrun rosserial_python serial_node.py tcp``` to connect to Wolf
 * cmd_vel is limited to -0.5 to +0.5. This means the max velocity of robot is 0.5 meters / second. 
 * To open teleop twist keyboard (if installed): ```rosrun teleop_twist_keyboard teleop_twist_keyboard.py```
 * Too see any error messages or information from Wolf ```rqt_console```
@@ -79,3 +81,7 @@ rostopic pub /cmd_vel geometry_msgs/Twist "{ angular: {z: 0.5} }" -r 5
 ```
 rostopic pub toggle_buzzer std_msgs/Empty
 ```
+
+## Updating Firmware
+* Wolf has a wired serial connection that can be used to upgrade the base controller firmware. 
+*  --- Will be updated soon ----
