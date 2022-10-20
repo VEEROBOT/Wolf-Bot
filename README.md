@@ -50,6 +50,7 @@ catkin_make install
 * View the list of ros nodes ```rosnode list```
 * View the list of ros topics ```rostopic list```
 * View information on specific topic ```rostopic info <topicname>```
+* View published data on specific topic ```rostopic echo <topicname>```
 * Find any specific file on Ubuntu ```sudo find . -name <filename>```
 
 ## Running Wolf Commands from ROS Command Prompt by sending command velocity (cmd_vel)
